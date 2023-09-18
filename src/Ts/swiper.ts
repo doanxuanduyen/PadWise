@@ -1,3 +1,5 @@
+import { animateSlideContent } from './gsap';
+
 export const setupSwiper = () => {
   const defaultSetting = {
     loop: true,
@@ -8,10 +10,15 @@ export const setupSwiper = () => {
       type: 'bullets',
       clickable: true,
     },
+    on: {
+      init: (el: any) => animateSlideContent(el.slides[el.activeIndex], 0),
+      slideChangeTransitionStart: (el: any) => animateSlideContent(el.slides[el.activeIndex], 0),
+    },
     autoplay: {
       delay: 5000,
     },
   };
+
   new Swiper('.mySwiper', {
     ...defaultSetting,
     slidesPerView: 1,

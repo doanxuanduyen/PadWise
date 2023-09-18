@@ -14,6 +14,9 @@
     <!--  swiper 10  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!--  gsap 3  -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
   </head>
   <body>
     <!-- HEADER -->
@@ -41,11 +44,11 @@
       <!-- BANNER -->
       <div class="banner">
         <div class="relative top-0 swiper mySwiper w-full h-[492.875px]">
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper h-[492.875px]">
             <div class="swiper-slide">
               <img alt="Row 01, col 01" class="w-full h-[70vh] object-cover" src="./src/img/bannerSlider.png" />
               <div class="container mx-auto">
-                <div class="absolute h-full top-0 bg-green-700 z-50 opacity-95">
+                <div class="gsap left absolute h-full top-0 bg-green-700 z-50 opacity-95">
                   <div class="flex h-full">
                     <div class="hidden lg:flex flex-col w-52 pt-5 px-5">
                       <p class="text-2xl font-bold text-amber-500 h-16">Billboard</p>
@@ -66,7 +69,7 @@
             <div class="swiper-slide">
               <img alt="Row 01, col 01" class="w-full h-[70vh] object-cover" src="./src/img/slide4.jpg" />
               <div class="container mx-auto">
-                <div class="absolute h-full top-0 bg-green-700 z-50 opacity-95">
+                <div class="gsap left absolute h-full top-0 bg-green-700 z-50 opacity-95">
                   <div class="flex h-full">
                     <div class="hidden lg:flex flex-col w-52 pt-5 px-5">
                       <p class="text-2xl font-bold text-amber-500 h-16">Billboard</p>
@@ -99,7 +102,7 @@
             <div class="swiper-slide">
               <img alt="Row 01, col 01" class="w-full h-[70vh] object-cover" src="./src/img/slide6.jpg" />
               <div class="container mx-auto">
-                <div class="absolute h-full top-0 bg-green-700 z-50 opacity-95">
+                <div class="gsap left absolute h-full top-0 bg-green-700 z-50 opacity-95">
                   <div class="flex h-full">
                     <div class="hidden lg:flex flex-col w-52 pt-5 px-5">
                       <p class="text-2xl font-bold text-amber-500 h-16">Billboard</p>
@@ -144,7 +147,7 @@
             <div class="swiper-slide">
               <img alt="Row 01, col 01" class="w-full h-[70vh] object-cover" src="./src/img/slide5.jpg" />
               <div class="container mx-auto">
-                <div class="absolute h-full top-0 bg-green-700 z-50 opacity-95">
+                <div class="gsap left absolute h-full top-0 bg-green-700 z-50 opacity-95">
                   <div class="flex h-full">
                     <div class="hidden lg:flex flex-col w-52 pt-5 px-5">
                       <p class="text-2xl font-bold text-amber-500 h-16">Billboard</p>
@@ -199,7 +202,7 @@
               </div>
             </div>
           </div>
-          <div class="absolute bottom-[-1px] swiper-pagination w-full h-10 bg-gray-200 opacity-25 shadow-md"></div>
+          <div class="absolute !bottom-[-1px] swiper-pagination w-full h-10 bg-gray-200 opacity-25 shadow-md"></div>
         </div>
       </div>
       <!-- SESSION -->
@@ -393,7 +396,7 @@
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div
-                          class="mb-5 bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
+                          class="bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
                         >
                           <div class="flex flex-row justify-between p-4">
                             <div>
@@ -404,7 +407,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -413,7 +416,7 @@
                       </div>
                       <div class="swiper-slide">
                         <div
-                          class="mb-5 bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
+                          class="bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
                         >
                           <div class="flex flex-row justify-between p-4">
                             <div>
@@ -424,7 +427,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -435,7 +438,7 @@
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div
-                          class="mb-5 bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
+                          class="bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
                         >
                           <div class="flex flex-row justify-between p-4">
                             <div>
@@ -446,7 +449,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -455,7 +458,7 @@
                       </div>
                       <div class="swiper-slide">
                         <div
-                          class="mb-5 bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
+                          class="bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
                         >
                           <div class="flex flex-row justify-between p-4">
                             <div>
@@ -466,7 +469,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -607,7 +610,7 @@
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div
-                          class="mb-5 bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
+                          class="bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
                         >
                           <div class="flex flex-row justify-between p-4">
                             <div>
@@ -618,7 +621,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -627,7 +630,7 @@
                       </div>
                       <div class="swiper-slide">
                         <div
-                          class="mb-5 bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
+                          class="bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
                         >
                           <div class="flex flex-row justify-between p-4">
                             <div>
@@ -638,7 +641,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -649,7 +652,7 @@
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div
-                          class="mb-5 bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
+                          class="bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
                         >
                           <div class="flex flex-row justify-between p-4">
                             <div>
@@ -660,7 +663,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -669,7 +672,7 @@
                       </div>
                       <div class="swiper-slide">
                         <div
-                          class="mb-5 bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
+                          class="bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
                         >
                           <div class="flex flex-row justify-between p-4">
                             <div>
@@ -680,7 +683,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -821,7 +824,7 @@
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div
-                          class="mb-5 bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
+                          class="bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
                         >
                           <div class="flex flex-row justify-between p-4">
                             <div>
@@ -832,7 +835,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -841,7 +844,7 @@
                       </div>
                       <div class="swiper-slide">
                         <div
-                          class="mb-5 bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
+                          class="bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
                         >
                           <div class="flex flex-row justify-between p-4">
                             <div>
@@ -852,7 +855,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -863,7 +866,7 @@
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div
-                          class="mb-5 bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
+                          class="bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
                         >
                           <div class="flex flex-row justify-between p-4">
                             <div>
@@ -874,7 +877,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -883,7 +886,7 @@
                       </div>
                       <div class="swiper-slide">
                         <div
-                          class="mb-5 bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
+                          class="bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
                         >
                           <div class="flex flex-row justify-between p-4">
                             <div>
@@ -894,7 +897,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -1034,7 +1037,7 @@
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div
-                          class="mb-5 bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
+                          class="bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
                         >
                           <div class="flex flex-row justify-between p-4">
                             <div>
@@ -1045,7 +1048,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -1054,7 +1057,7 @@
                       </div>
                       <div class="swiper-slide">
                         <div
-                          class="mb-5 bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
+                          class="bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
                         >
                           <div class="flex flex-row justify-between p-4">
                             <div>
@@ -1065,7 +1068,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -1076,7 +1079,7 @@
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div
-                          class="mb-5 bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
+                          class="bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
                         >
                           <div class="flex flex-row justify-between p-4">
                             <div>
@@ -1087,7 +1090,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -1096,7 +1099,7 @@
                       </div>
                       <div class="swiper-slide">
                         <div
-                          class="mb-5 bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
+                          class="bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
                         >
                           <div class="flex flex-row justify-between p-4">
                             <div>
@@ -1107,7 +1110,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -1247,7 +1250,7 @@
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div
-                          class="mb-5 bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
+                          class="bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
                         >
                           <div class="flex flex-row justify-between p-4">
                             <div>
@@ -1258,7 +1261,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -1267,7 +1270,7 @@
                       </div>
                       <div class="swiper-slide">
                         <div
-                          class="mb-5 bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
+                          class="bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
                         >
                           <div class="flex flex-row justify-between p-4">
                             <div>
@@ -1278,7 +1281,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -1289,7 +1292,7 @@
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div
-                          class="mb-5 bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
+                          class="bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
                         >
                           <div class="flex flex-row justify-between p-4">
                             <div>
@@ -1300,7 +1303,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -1309,7 +1312,7 @@
                       </div>
                       <div class="swiper-slide">
                         <div
-                          class="mb-5 bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
+                          class="bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
                         >
                           <div class="flex flex-row justify-between p-4">
                             <div>
@@ -1320,7 +1323,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -1461,7 +1464,7 @@
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div
-                          class="mb-5 bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
+                          class="bg-gray-100 flex flex-col rounded-lg relative text-gray-500 group transition-all duration-500 ease-in-out"
                         >
                           <div class="flex flex-row justify-between p-4">
                             <div>
@@ -1472,7 +1475,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -1492,7 +1495,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -1514,7 +1517,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
@@ -1534,7 +1537,7 @@
                               />
                             </div>
                           </div>
-                          <div class="px-4 pb-4">
+                          <div class="px-4">
                             <h2 class="h-14 truncate-2 text-lg text-gray-600 font-bold">
                               Biển quảng cáo quán coffee TRT
                             </h2>
