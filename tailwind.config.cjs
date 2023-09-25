@@ -282,9 +282,12 @@ module.exports = {
       },
     }),
     extend: {
+
       keyframes: {
+
         shine: {
-          '100%': { left: '125%' },
+          '0%': { left: '800%' },
+          '100%': { left: '0%' },
         },
         burgerHover: {
           '0%': { width: '100%' },
@@ -299,7 +302,8 @@ module.exports = {
         }
       },
       animation: {
-        shine: 'shine 0.8s',
+
+        shine: 'shine 1s',
         'intro-x-animation': 'introXAnimation .4s ease-in-out forwards .33333s',
         'burger-hover-2': 'burgerHover 1s infinite ease-in-out alternate forwards 200ms',
         'burger-hover-4': 'burgerHover 1s infinite ease-in-out alternate forwards 400ms',
